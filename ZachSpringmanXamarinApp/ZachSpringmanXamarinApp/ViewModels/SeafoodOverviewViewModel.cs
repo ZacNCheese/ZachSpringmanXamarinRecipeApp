@@ -12,14 +12,12 @@ namespace ZachSpringmanXamarinApp.ViewModels
     public class SeafoodOverviewViewModel : ViewModelBase
     {
         public ObservableRangeCollection<Recipe> Recipe { get; set; }
-        public ObservableRangeCollection<Grouping<string, Recipe>> RecipeGroups { get; set; } //allows to have a "list of lists" with a key
         public AsyncCommand RefreshCommand { get; }
         public SeafoodOverviewViewModel()
         {
             Title = "Seafood Recipes";
 
             Recipe = new ObservableRangeCollection<Recipe>();
-            RecipeGroups = new ObservableRangeCollection<Grouping<string, Recipe>>();
 
             //-------------BELOW IS THE MANUAL WAY I ADDED RECIPES TO TEST... I MADE A FUNCTION THAT CALLS THE API TO GRAB ALL SEAFOOD RECIPES
 
