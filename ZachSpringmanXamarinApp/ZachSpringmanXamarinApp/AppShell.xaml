@@ -78,28 +78,28 @@
         FlyoutDisplayOptions="AsMultipleItems" will create a separate flyout item for each child element    
         https://docs.microsoft.com/dotnet/api/xamarin.forms.shellgroupitem.flyoutdisplayoptions?view=xamarin-forms
     -->
-    <FlyoutItem Title="Home" Icon="icon_about.png">
+    <FlyoutItem Title="Home" Icon="icon_home.png">
         <ShellContent Route="HomePage" ContentTemplate="{DataTemplate local:HomePage}" />
     </FlyoutItem>
-    <FlyoutItem Title="Seafood" Icon="icon_about.png">
+    <FlyoutItem Title="Seafood" Icon="icon_seafood.png">
         <ShellContent Route="RecipePage" ContentTemplate="{DataTemplate local:RecipeOverview}" />
     </FlyoutItem>
-    <FlyoutItem Title="Pasta" Icon="icon_about.png">
+    <FlyoutItem Title="Pasta" Icon="icon_pasta.png">
         <ShellContent Route="PastaPage" ContentTemplate="{DataTemplate local:PastaOverview}" />
     </FlyoutItem>
-    <FlyoutItem Title="Beef Meals" Icon="icon_about.png">
+    <FlyoutItem Title="Beef Meals" Icon="icon_beef.png">
         <ShellContent Route="BeefPage" ContentTemplate="{DataTemplate local:BeefOverview}" />
     </FlyoutItem>
-    <FlyoutItem Title="Chicken Meals" Icon="icon_about.png">
+    <FlyoutItem Title="Chicken Meals" Icon="icon_chicken.png">
         <ShellContent Route="ChickenOverview" ContentTemplate="{DataTemplate local:ChickenOverview}" />
     </FlyoutItem>
-    <FlyoutItem Title="Vegetarian" Icon="icon_about.png">
+    <FlyoutItem Title="Vegetarian" Icon="icon_vegetarian.png">
         <ShellContent Route="VegetarianOverview" ContentTemplate="{DataTemplate local:VegetarianOverview}" />
     </FlyoutItem>
-    <FlyoutItem Title="Vegan" Icon="icon_about.png">
+    <FlyoutItem Title="Vegan" Icon="icon_vegan.png">
         <ShellContent Route="VeganOverview" ContentTemplate="{DataTemplate local:VeganOverview}" />
     </FlyoutItem>
-    <FlyoutItem Title="Dessert" Icon="icon_about.png">
+    <FlyoutItem Title="Dessert" Icon="icon_dessert.png">
         <ShellContent Route="DessertOverview" ContentTemplate="{DataTemplate local:DessertOverview}" />
     </FlyoutItem>
 </Shell>

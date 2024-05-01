@@ -121,7 +121,6 @@
     <BundleResource Include="Resources\xamarin_logo.png" />
     <BundleResource Include="Resources\xamarin_logo%402x.png" />
     <BundleResource Include="Resources\xamarin_logo%403x.png" />
-    <InterfaceDefinition Include="Resources\LaunchScreen.storyboard" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -147,5 +146,8 @@
       <Project>{CA355871-C7D1-495C-AAB7-7B233186C1AF}</Project>
       <Name>ZachSpringmanXamarinApp</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Resources\recipe_book_icon.png" />
   </ItemGroup>
 </Project>
