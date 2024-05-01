@@ -2,24 +2,19 @@
 using MvvmHelpers.Commands;
 using Newtonsoft.Json;
 using System;
-using System.Collections.Generic;
-using System.Collections.ObjectModel;
 using System.Net.Http;
-using System.Reflection;
-using System.Text;
 using System.Threading.Tasks;
-using System.Windows.Input;
 using ZachSpringmanXamarinApp.Models;
 //using Xamarin.Forms;
 
 namespace ZachSpringmanXamarinApp.ViewModels
 {
-    public class SeafoodRecipeOverviewViewModel : ViewModelBase
+    public class SeafoodOverviewViewModel : ViewModelBase
     {
         public ObservableRangeCollection<Recipe> Recipe { get; set; }
         public ObservableRangeCollection<Grouping<string, Recipe>> RecipeGroups { get; set; } //allows to have a "list of lists" with a key
         public AsyncCommand RefreshCommand { get; }
-        public SeafoodRecipeOverviewViewModel()
+        public SeafoodOverviewViewModel()
         {
             Title = "Seafood Recipes";
 
