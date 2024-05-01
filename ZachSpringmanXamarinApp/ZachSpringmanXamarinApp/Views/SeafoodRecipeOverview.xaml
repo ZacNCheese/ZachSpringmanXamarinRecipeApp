@@ -20,9 +20,13 @@
                     <Grid Padding="10">
                         <Frame CornerRadius="20"
                                HasShadow="True">
+                            <Frame.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="Frame_Tapped" />
+                            </Frame.GestureRecognizers>
                             <StackLayout Orientation="Horizontal">
                                 <Image Source="{Binding strMealThumb}"
-                                       WidthRequest="200"/>
+                                       WidthRequest="200"
+                                       />
                                 <StackLayout VerticalOptions="Center">
                                     <Label VerticalOptions="Center"
                                            FontSize="Large"

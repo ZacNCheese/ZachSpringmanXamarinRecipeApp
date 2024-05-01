@@ -17,5 +17,6 @@ namespace ZachSpringmanXamarinApp.Models
         public string strArea { get; set; }
         public string strCategory { get; set; }
         public string strMealThumb { get; set; }
+        public string strInstructions { get; set; }
     }
 }

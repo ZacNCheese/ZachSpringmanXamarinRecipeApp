@@ -5,6 +5,7 @@ using System.Linq;
 using Foundation;
 using UIKit;
 
+
 namespace ZachSpringmanXamarinApp.iOS
 {
     // The UIApplicationDelegate for the application. This class is responsible for launching the 
@@ -22,6 +23,8 @@ namespace ZachSpringmanXamarinApp.iOS
         //
         public override bool FinishedLaunching(UIApplication app, NSDictionary options)
         {
+            Rg.Plugins.Popup.Popup.Init(); // Initialize Popup plugin
+
             global::Xamarin.Forms.Forms.Init();
             LoadApplication(new App());
 

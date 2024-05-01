@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<pages:PopupPage xmlns="http://xamarin.com/schemas/2014/forms"
+                  xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+                  xmlns:pages="clr-namespace:Rg.Plugins.Popup.Pages;assembly=Rg.Plugins.Popup"
+                  x:Class="ZachSpringmanXamarinApp.Views.RecipePopupPage"
+                  BackgroundColor="#E0E0E0"
+                  WidthRequest="300"
+                  HeightRequest="200">
+
+    <StackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="CenterAndExpand" Padding="20">
+        <Label x:Name="recipeLabel" FontSize="Large" HorizontalOptions="Center" TextColor="Black" />
+        <ScrollView VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <Label x:Name="instructionsLabel" FontSize="Medium" HorizontalOptions="Center" TextColor="Black" />
+        </ScrollView>
+        <Button Text="Close" Clicked="OnCloseButtonClicked" HorizontalOptions="Center" Margin="20" BackgroundColor="PaleVioletRed" TextColor="White" />
+    </StackLayout>
+
+</pages:PopupPage>
