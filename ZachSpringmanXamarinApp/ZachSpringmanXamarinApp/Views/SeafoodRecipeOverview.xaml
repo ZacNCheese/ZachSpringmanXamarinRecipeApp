@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ZachSpringmanXamarinApp.Views.RecipeOverview"
+             xmlns:viewmodels="clr-namespace:ZachSpringmanXamarinApp.ViewModels" xmlns:model="clr-namespace:ZachSpringmanXamarinApp.Models"
+             x:DataType="viewmodels:SeafoodRecipeOverviewViewModel">
+   <!-- https://learn.microsoft.com/en-us/xamarin/  ...xamarin documentation -->
+    <ContentPage.BindingContext>
+        <viewmodels:SeafoodRecipeOverviewViewModel/>
+    </ContentPage.BindingContext>
+
+    <ListView BackgroundColor="Transparent"
+              ItemsSource="{Binding Recipe}"
+              HasUnevenRows="True"
+              SeparatorVisibility="None">
+        
+        <ListView.ItemTemplate>
+            <DataTemplate x:DataType="model:Recipe">
+                <ViewCell>
+                    <Grid Padding="10">
+                        <Frame CornerRadius="20"
+                               HasShadow="True">
+                            <StackLayout Orientation="Horizontal">
+                                <Image Source="{Binding strMealThumb}"
+                                       WidthRequest="200"/>
+                                <StackLayout VerticalOptions="Center">
+                                    <Label VerticalOptions="Center"
+                                           FontSize="Large"
+                                           Text="{Binding strMeal}"/>
+                                    <Label VerticalOptions="Center"
+                                           FontSize="Large"
+                                           Text="{Binding strArea}"/>
+                                </StackLayout>
+                            </StackLayout>
+                        </Frame>
+                    </Grid>
+                </ViewCell>
+            </DataTemplate>
+        </ListView.ItemTemplate>
+    </ListView>
+    
+</ContentPage>
