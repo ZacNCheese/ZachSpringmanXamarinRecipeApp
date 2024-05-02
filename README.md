@@ -1,4 +1,4 @@
-This is my first attempt at a Xamarin application with the MVVM structure.
+This is my first Xamarin application with the MVVM structure.
 
 I tested on an android simulator that simulated the Pixel 6.
 
